@@ -28,7 +28,7 @@ Resources:
               - "s3:GetObject"
             Resource: !Sub "${StaticSiteBucket.Arn}/*"
 
-  Outputs:
+Outputs:
   BucketName:
     Description: S3 bucket name
     Value: !Ref StaticSiteBucket
